@@ -1,0 +1,35 @@
+
+<!-- Se muestra cuando se esta logueado -->
+<div id="main-wrapper">
+
+  <app-header></app-header>
+  <app-sidebar></app-sidebar>
+
+  <div class="page-wrapper">
+
+    <div class="container-fluid">
+      <!-- Breadcrum que muestra la ruta en la página -->
+      <app-breadcrumbs></app-breadcrumbs>
+      <!-- Sistema de rutas -->
+      <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <!-- This is some text within a card block. -->
+                    <router-outlet></router-outlet>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            © 2021 Admin Pro by Miguel Angel Gragera
+        </footer>
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+  </div>
+
