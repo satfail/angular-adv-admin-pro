@@ -26,8 +26,13 @@
                         <span class="label label-rouded label-themecolor pull-right">{{item.submenu.length}}</span></span></a>
                         <ul aria-expanded="false" class="collapse">
                             <li *ngFor="let subItem of item.submenu">
-                              <a [routerLink] = "subItem.url">{{subItem.title}} </a>
+                              <a [routerLink] = "subItem.url"
+                              routerLinkActive ="active"
+                              [routerLinkActiveOptions] ="{exact: true}">{{subItem.title}} </a>
                             </li>
+                            <!-- el exact para que le ponga la clase active
+                            solo al que esta seleccionado no al padre
+                          dashboard(main)/ruta -->
                         </ul>
                     </li>
                 </ul>
